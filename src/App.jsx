@@ -18,7 +18,7 @@ function App() {
   return (
       <div className="main-page">
           <div className="main">
-              <Header counter={counter}/>
+              <Header counter={counter} />
               <div className="content">
                   <div>
 
@@ -46,7 +46,7 @@ function App() {
                     <Search/>
                     <CardComponent onClick={addToCart}/>
                       <div id="pagination">
-                          <Pagination/>
+                          <Pagination activePage={0} totalPages={12}/>
                       </div>
 
                   </div>

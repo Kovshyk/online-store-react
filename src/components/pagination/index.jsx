@@ -4,8 +4,8 @@ export default class Pagination extends React.Component {
         super(...args);
 
         this.state = {
-            totalPages: 12,
-            selectPage: 0,
+            totalPages: this.props.totalPages,
+            selectPage: this.props.activePage,
             index: 0,
         }
     }
